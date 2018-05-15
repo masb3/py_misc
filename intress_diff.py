@@ -30,6 +30,9 @@ kred195_20let = 49637
 kred195_25let = 27066
 
 
+kred = 119610
+
+
 if __name__ == '__main__':
     print('intress za 5 let (v konce)\n')
 
@@ -57,19 +60,19 @@ if __name__ == '__main__':
 
     print('kredit ostatok za 5 let (v konce)\n')
 
-    print("\t1.85%\t1.95%\tOstatok diff\t")
+    print("\t1.85%\t\t\t1.95%\t\t\tOstatok diff\t")
 
     print("5y:")
-    print("\t{}\t{}\t{}".format(kred185_5let, kred195_5let, kred195_5let - kred185_5let))
+    print("\t{} ({})\t{} ({})\t{}".format(kred185_5let, kred-kred185_5let, kred195_5let, kred-kred195_5let, kred195_5let - kred185_5let))
 
     print("10y:")
-    print("\t{}\t{}\t{}".format(kred185_10let, kred195_10let, kred195_10let-kred185_10let))
+    print("\t{} ({})\t{} ({})\t{}".format(kred185_10let, kred-kred185_10let, kred195_10let, kred-kred195_10let, kred195_10let-kred185_10let))
 
     print("15y:")
-    print("\t{}\t{}\t{}".format(kred185_15let, kred195_15let, kred195_15let-kred185_15let))
+    print("\t{} ({})\t{} ({})\t{}".format(kred185_15let, kred-kred185_15let, kred195_15let, kred-kred195_15let, kred195_15let-kred185_15let))
 
     print("20y:")
-    print("\t{}\t{}\t{}".format(kred185_20let, kred195_20let, kred195_20let-kred185_20let))
+    print("\t{} ({})\t{} ({})\t{}".format(kred185_20let, kred-kred185_20let, kred195_20let, kred-kred195_20let, kred195_20let-kred185_20let))
 
     print("25y:")
-    print("\t-----\t{}\t{}".format(kred195_25let, kred195_25let - 0))
+    print("\t-----\t\t\t{} ({})\t{}".format(kred195_25let, kred-kred195_25let, kred195_25let - 0))
