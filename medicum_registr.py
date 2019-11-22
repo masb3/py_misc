@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # with open('all.json', 'w', encoding='utf-8') as f:
     #     json.dump(resp.json(), f)
 
-    if 200 ==resp.status_code:
+    if 200 == resp.status_code:
         num = 0
         for i in resp.json():
             if PERSON_NAME == i['PersonName'] and 0 == i['Price']:
